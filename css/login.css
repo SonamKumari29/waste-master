@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e7f1e4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  background-color: #f1f5eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+h1 {
+  color: #4c754c;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.user-ngo-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.user-ngo-toggle button {
+  background-color: #6b936b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.user-ngo-toggle button:hover {
+  background-color: #567656;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+form button {
+  background-color: #4c754c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form button:hover {
+  background-color: #3b603b;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

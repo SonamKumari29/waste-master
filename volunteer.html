@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteering Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #294b29; /* Green background */
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #333;
+        padding: 10px;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+      }
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .content {
+        padding: 20px;
+      }
+      .section {
+        margin: 20px 0;
+      }
+      .section img {
+        width: 100%;
+        height: auto;
+      }
+      .section h2 {
+        margin-top: 0;
+      }
+      .button {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .button:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .form-container {
+        margin-top: 20px;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      .form-container label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .form-container input[type="text"],
+      .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
+      }
+      .form-container input[type="submit"] {
+        background-color: #294b29;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      .form-container input[type="submit"]:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#volunteering">Volunteering</a>
+    </div>
+    <div class="content">
+      <div class="section" id="volunteering">
+        <h2>Join Us ....</h2>
+        <p>
+          We are looking for eco-warriors as volunteers to help us from time to
+          time on specific projects.
+        </p>
+        <img src="img/don/Volunteer.png" alt="Group of volunteers" />
+        <a href="#" class="button">Join us...</a>
+      </div>
+      <div class="section" id="issue-dashboard">
+        <h2>How you can contribute</h2>
+        <p>
+          Join on ground implementation at events: Our goal at events is to
+          reduce and manage the waste that is generated and we rely on a team of
+          volunteers to help us achieve this. As a volunteer, you will raise
+          awareness among attendees about waste segregation, help us collect
+          surplus food for donation and make events zero waste.
+        </p>
+        <img src="img/miss/4.jpg" alt="Waste management area" />
+        <a href="#" class="button">Learn more</a>
+      </div>
+      <div class="section" id="volunteer-form">
+        <h2>Volunteer Form</h2>
+        <div class="form-container">
+          <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Application:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

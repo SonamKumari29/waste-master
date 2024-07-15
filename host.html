@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Host Campaign Issue Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #dbe7c9;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+      .search-bar {
+        padding: 20px;
+        text-align: center;
+      }
+      .search-bar input {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      #message {
+        margin-top: 20px;
+        text-align: center;
+      }
+      #background-image {
+        position: center;
+        height: 400px;
+        margin-top: 7%;
+        margin-left: 30%;
+        border: 2px solid black;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#home">Waste Master</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="host.html">Host Campaigns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="volunteer.html">Volunteering</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Issue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">SignUp/SignIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="search-bar">
+      <input
+        type="text"
+        placeholder="Search your place to host campaign"
+        list="places"
+        onchange="showMessage(this.value)"
+      />
+      <datalist id="places">
+        <option value="Shahdara"></option>
+        <option value="Rohini East"></option>
+        <option value="Rohini West"></option>
+      </datalist>
+    </div>
+
+    <img id="background-image" src="img/miss/image.png" alt="Shahdara" />
+
+    <script>
+      function showMessage(value) {
+        if (value === "Shahdara") {
+          document.getElementById("background-image").style.display = "block";
+        } else {
+          document.getElementById("background-image").style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
