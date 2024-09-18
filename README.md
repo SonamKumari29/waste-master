@@ -26,7 +26,7 @@ To run **WasteMaster** locally, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/waste-master.git
+   git clone https://github.com/SonamKumari29/waste-master.git
    ```
 
 2. **Navigate to the Project Directory**
